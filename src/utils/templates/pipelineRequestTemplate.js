@@ -6,7 +6,7 @@ function generateMergeRequestTemplate(mergeRequest) {
     User: ${mergeRequest.user}
     Date: ${mergeRequest.date}
     Message: ${mergeRequest.message}
-    Stage Name: ${mergeRequest.stageName}
+    Stage Names: ${mergeRequest.stageName}
     `;
   }
   
