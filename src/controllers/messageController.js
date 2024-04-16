@@ -49,6 +49,7 @@ exports.sendMessageWithTemplate = (req, res) => {
     const pipelineRequestTemplate = generatePipelineRequestTemplate(req.body);
     console.log(pipelineRequestTemplate);
     console.log(req.body);
+    
     telegramService.sendMessage(pipelineRequestTemplate, channelId);
     res.json({ success: true, message: 'Message sent successfully' });
   } catch (error) {
